@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="InventoryData" load_steps=9 format=3 uid="uid://elmq8mbbs5sg"]
+
+[ext_resource type="Script" path="res://resources/Inventory.gd" id="1_08ddo"]
+[ext_resource type="Resource" uid="uid://cwgrbwd6m8iej" path="res://items/SmallHPPotion.tres" id="2_mpfac"]
+[ext_resource type="Script" path="res://resources/ItemSlot.gd" id="3_hj3jn"]
+[ext_resource type="Resource" uid="uid://fg6nj3m0e3we" path="res://items/SmallMPPotion.tres" id="4_7jirj"]
+[ext_resource type="Resource" uid="uid://cpurifpmlwemc" path="res://items/MediumHPPotion.tres" id="5_msyvb"]
+
+[sub_resource type="Resource" id="Resource_2b00n"]
+script = ExtResource("3_hj3jn")
+qnt = 99
+baseItem = ExtResource("2_mpfac")
+
+[sub_resource type="Resource" id="Resource_ckxp1"]
+script = ExtResource("3_hj3jn")
+qnt = 99
+baseItem = ExtResource("4_7jirj")
+
+[sub_resource type="Resource" id="Resource_ydgeh"]
+script = ExtResource("3_hj3jn")
+qnt = 99
+baseItem = ExtResource("5_msyvb")
+
+[resource]
+script = ExtResource("1_08ddo")
+slotDatas = Array[ExtResource("3_hj3jn")]([SubResource("Resource_2b00n"), SubResource("Resource_ckxp1"), SubResource("Resource_ydgeh")])

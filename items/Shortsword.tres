@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Weapons" load_steps=2 format=3 uid="uid://bnsomrqavh2js"]
+
+[ext_resource type="Script" path="res://resources/weapons.gd" id="1_yulip"]
+
+[resource]
+script = ExtResource("1_yulip")
+Damage = 6
+Multiplier = 1
+Modifier = 0
+Weapon_Type = 0
+Evasion = 0
+Name = "Espada Curta"
+Description = "Uma espada curta simples.
+Dano: 1d6
+Compra: 20 G
+Venda: 15 G"
+BuyPrice = 20
+SellPrice = 15
+Stackable = false
+ItemType = 0

@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Consumables" load_steps=2 format=3 uid="uid://crxvtpt5n5c8l"]
+
+[ext_resource type="Script" path="res://resources/consumable.gd" id="1_6vpa3"]
+
+[resource]
+script = ExtResource("1_6vpa3")
+HP_Restored = 0
+MP_Restored = 50
+TypeReduction = 0
+DamageReduction = 0
+Damage = 0
+Defense = 0
+EffectTurns = 0
+BattleRequired = false
+Name = "Poção de MP (M)"
+Description = "Poção média que rucepra MP
+MP:+50
+Compra: 40G
+Venda: 30G"
+BuyPrice = 40
+SellPrice = 30
+Stackable = true
+ItemType = 0

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3 uid="uid://b7jnlltrrsjcn"]
+
+[ext_resource type="Script" path="res://resources/base_item.gd" id="1_0f0ng"]
+
+[resource]
+script = ExtResource("1_0f0ng")
+Name = "Cristal"
+Description = "Um cristal brilhante.
+Venda: 150 G"
+BuyPrice = 150
+SellPrice = 150
+Stackable = true
+ItemType = 3

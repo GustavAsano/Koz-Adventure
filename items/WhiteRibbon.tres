@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Armors" load_steps=2 format=3 uid="uid://b0xdn8r1mflxf"]
+
+[ext_resource type="Script" path="res://resources/armors.gd" id="1_emeog"]
+
+[resource]
+script = ExtResource("1_emeog")
+Defense = 1
+HPExtra = 0
+MPExtra = 0
+Modifier = 0
+ModType = 1
+Weight = 0
+Armor_Type = 0
+Evasion = 10
+Resistance = Array[Resource("res://resources/resistance.gd")]([])
+Name = "Laço Branco"
+Description = "Um laço branco puramente para a estética.
+Defesa: +1
+Compra: 50 G
+Venda : 37 G"
+BuyPrice = 50
+SellPrice = 40
+Stackable = true
+ItemType = 1

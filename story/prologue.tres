@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="Story" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://resources/Story.gd" id="1_dec4o"]
+
+[resource]
+script = ExtResource("1_dec4o")
+Flags = Array[int]([0, 0, 0])

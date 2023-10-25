@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=3 format=3 uid="uid://davjjt4lqxykm"]
+
+[ext_resource type="Script" path="res://resources/base_enemy.gd" id="1_i47qf"]
+[ext_resource type="Resource" uid="uid://byu8l3rnhq8mk" path="res://items/BoarTusk.tres" id="1_s58pc"]
+
+[resource]
+script = ExtResource("1_i47qf")
+Name = "Javali Selvagem"
+Level = "3"
+HP = 50
+MP = 10
+EXPDrop = 20
+ItemDrop = ExtResource("1_s58pc")
+DropQnt = 1
+Damage = 6
+Modifier = 2
+Multiplier = 1
+Defense = 15
+Boss_enemy = false
+Resistance = Array[Resource("res://resources/resistance.gd")]([])

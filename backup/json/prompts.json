@@ -1,0 +1,32 @@
+[
+	{"promptID":0, "Text": " ", "Next":0},
+	{"promptID":1,"Scene":"forest", "Text": "It's morning and you just woke up. The sun shines brigthly through your windows.", "Next":2,"dialogID":0,"Choices":
+	[ 
+		{"TextOP": "Head Outside", "NextP":2,"NextD":0}
+	]
+	},
+	{"promptID":2, "Scene":"forest","Text": "The village is quite busy you wonder who you can find at this hour", "Next":2,"dialogID":0,"Choices":
+	[ 
+		{"TextOP": "Head to your friends house", "NextP":3,"NextD":0},
+		{"TextOP": "Head back inside", "NextP":1, "NextD":0}
+	]
+	},
+	{"promptID":3,"Scene":"forest", "Text": "You are in front of your friend's house, you could go in or leave the village",  "Next":3,"dialogID":0,"Choices":
+	[ 
+		{"TextOP": "Head Inside", "NextP":0,"NextD":1},
+		{"TextOP": "Head back to your house", "NextP":2,"NextD":0},
+		{"TextOP": "Head outside", "NextP":4, "NextD":0}
+	]
+	},
+	{"promptID":4,"Scene":"cliffs", "Text": "You are out in the nearby cliffs" , "Next":4,"dialogID":0,"Choices":
+	[ 
+		{"TextOP": "Head towards the cave", "NextP":5, "NextD":0},
+		{"TextOP": "head to the city", "NextP":3,"NextD":0},
+		{"TextOP": "Head to your home", "NextP":1,"NextD":0},
+		{"TextOP": "This goes to combat", "NextP":7,"NextD":0}
+	]
+	},
+	{"promptID":5,"Scene":"cave", "Text": "The End" , "Next":0,"dialogID":0,"encounterID":0,"Choices":[]},
+	{"promptID":6,"Scene":"forest", "Text": "You two start undressing yourselves With that both of you have a great time together. You talk to him" , "Next":0,"dialogID":1,"encounterID":0,"Choices":[]},
+	{"promptID":7,"Scene":"cliffs", "Text": "A dreadful bug appears!" , "Next":0,"dialogID":0,"encounterID":1,"Choices":[]}
+]

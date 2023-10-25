@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="SpellList" load_steps=3 format=3 uid="uid://bxhfd2vam25g1"]
+
+[ext_resource type="Script" path="res://resources/SpellList.gd" id="1_abyd8"]
+[ext_resource type="Resource" uid="uid://cnlqawhis2ydc" path="res://spells/Firebolt.tres" id="2_k5rwt"]
+
+[resource]
+script = ExtResource("1_abyd8")
+slotDatas = Array[Resource("res://resources/spells.gd")]([ExtResource("2_k5rwt")])

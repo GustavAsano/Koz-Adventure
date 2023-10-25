@@ -1,0 +1,13 @@
+[
+	{"dialogID":0, "Text": " ", "Next":0},
+	{"dialogID":1, "Char1":"Koz","Char2":"???", "Speaker":1,"Text": "My friend!", "Next":2,"promptID": 0,"Choices":[]},
+	{"dialogID":2, "Char1":"Koz","Char2":"???", "Speaker":2,"Text": "Hey, how are you doing?", "Next":3,"promptID": 0,"Choices":
+	[ 
+		{"TextOP": "Could be better", "NextD":3,"NextP": 0},
+		{"TextOP": "I'm fine, but I need to leave", "NextD":4,"NextP": 0}
+	]
+	},
+	{"dialogID":3,"Char1":"Koz","Char2":"???","Speaker":1, "Text": "It isn't my best day yet, but other than that I'm good.", "Next":5,"promptID": 0,"Choices":[]},
+	{"dialogID":4,"Char1":"Koz","Char2":"???","Speaker":1, "Text": "I'm fine, but I need to go bye!", "Next":0,"promptID": 3, "Choices":[]},
+	{"dialogID":5,"Char1":"Koz","Char2":"???","Speaker":2, "Text": "Oh, let's have sex then!", "Next":0,"promptID": 6,"Choices":[]}
+]

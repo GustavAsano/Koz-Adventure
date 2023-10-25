@@ -1,0 +1,91 @@
+[gd_scene load_steps=4 format=3 uid="uid://41h2u5coc70y"]
+
+[ext_resource type="Script" path="res://scripts/inventory_list.gd" id="1_r6gww"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1i3qq"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ogus"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[node name="InventoryList" type="PanelContainer"]
+offset_right = 932.0
+offset_bottom = 839.0
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_1i3qq")
+script = ExtResource("1_r6gww")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Inventory" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/Inventory"]
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="ItemSlots" type="VBoxContainer" parent="MarginContainer/Inventory/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/separation = 20
+
+[node name="Names" type="HBoxContainer" parent="MarginContainer/Inventory/ScrollContainer/ItemSlots"]
+layout_mode = 2
+theme_override_constants/separation = 150
+
+[node name="Qnt" type="Label" parent="MarginContainer/Inventory/ScrollContainer/ItemSlots/Names"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "Quantidade"
+
+[node name="Item" type="Label" parent="MarginContainer/Inventory/ScrollContainer/ItemSlots/Names"]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "Item"
+
+[node name="Buttons" type="HBoxContainer" parent="MarginContainer/Inventory"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="ChangeButton" type="Button" parent="MarginContainer/Inventory/Buttons"]
+visible = false
+custom_minimum_size = Vector2(200, 75)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0ogus")
+
+[node name="UseButton" type="Button" parent="MarginContainer/Inventory/Buttons"]
+visible = false
+custom_minimum_size = Vector2(200, 75)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 8
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0ogus")
+text = "Usar"
+
+[connection signal="pressed" from="MarginContainer/Inventory/Buttons/ChangeButton" to="." method="_on_change_button_pressed"]
+[connection signal="pressed" from="MarginContainer/Inventory/Buttons/UseButton" to="." method="_on_use_button_pressed"]

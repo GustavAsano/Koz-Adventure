@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3 uid="uid://dj2eky18g028x"]
+
+[ext_resource type="Script" path="res://resources/base_item.gd" id="1_b2kuo"]
+
+[resource]
+script = ExtResource("1_b2kuo")
+Name = "Muco Verde"
+Description = "Um líquido pegajoso verde que constitui uma slime.
+Venda: 15 G"
+BuyPrice = 15
+SellPrice = 15
+Stackable = true
+ItemType = 3

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Quests" load_steps=4 format=3 uid="uid://c6cetmyednkvh"]
+
+[ext_resource type="Resource" uid="uid://davjjt4lqxykm" path="res://enemies/WildBoar.tres" id="1_2blrk"]
+[ext_resource type="Script" path="res://resources/Quests.gd" id="1_aro5f"]
+[ext_resource type="Resource" uid="uid://gmrnjl4xds1g" path="res://items/WarriorHelmet.tres" id="2_uspcq"]
+
+[resource]
+script = ExtResource("1_aro5f")
+Character = "Uvlo"
+Objective = 1
+Enemy = ExtResource("1_2blrk")
+Number = 3
+Progress = 0
+Flag = -1
+GoldReward = 150
+ItemQnt = 1
+ItemReward = ExtResource("2_uspcq")

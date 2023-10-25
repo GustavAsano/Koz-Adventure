@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Armors" load_steps=2 format=3 uid="uid://b7d668xo0ph5l"]
+
+[ext_resource type="Script" path="res://resources/armors.gd" id="1_3qv24"]
+
+[resource]
+script = ExtResource("1_3qv24")
+Defense = 5
+HPExtra = 10
+MPExtra = 30
+Modifier = 2
+ModType = 1
+Weight = 0
+Armor_Type = 0
+Evasion = 0
+Name = "Chapéu de Mago"
+Description = "Um chapéu pontudo característico de um mago.
+Defesa: +5
+HP: +10
+MP: +30
+Modificador (Mágico): +2"
+BuyPrice = 500
+SellPrice = 100
+Stackable = true
+ItemType = 1

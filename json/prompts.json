@@ -1,0 +1,729 @@
+[{
+		"promptID": 0,
+		"Text": " ",
+		"Next": 0
+	},
+	{
+		"promptID": 1,
+		"Scene": "forest",
+		"Text": "Koz, um Kobold jovem e ambicioso, está descansando perto de um rio na floresta perto da vila onda mora. Quando uma voz familiar o chama.",
+		"Next": 0,
+		"dialogID": 1,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 2,
+		"Scene": "forest",
+		"Text": "Ao ouvir a notícia, os olhos de Koz brilham e uma expressão animação é bem visível no kobold, mas isso so torna o seu amigo confuso.",
+		"Next": 0,
+		"dialogID": 6,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 3,
+		"Scene": "forest",
+		"Text": "Os kobolds riem juntos e logo após começam andar pela floresta conversando sobre suas memórias. Quando de repente eles ouvem barulhos vindo dos arbustos.",
+		"Next": 0,
+		"dialogID": 15,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 4,
+		"Scene": "forest",
+		"Text": "Uma slime aparece do arbusto!",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 1,
+		"Choices": []
+	},
+	{
+		"promptID": 5,
+		"Scene": "forest",
+		"Text": "Uma outra slime aparece!",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 2,
+		"Choices": []
+	},
+	{
+		"promptID": 6,
+		"Scene": "cliffs",
+		"Text": "Ambos continuam andando até chegar nas regiões montanhosas nos arredores da vila. Ao chegar na região, Gale começa a falar.",
+		"Next": 0,
+		"dialogID": 20,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 7,
+		"Scene": "cliffs",
+		"Text": "Gale suspira claramente frustado com a resposta.",
+		"Next": 0,
+		"dialogID": 31,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 8,
+		"Scene": "forest",
+		"Text": "Koz e Gale voltam para o vilarejo. Ao chegar na frente da casa do Líder Zuk, que é onde Koz mora, eles se despedem.",
+		"Next": 0,
+		"dialogID": 32,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 9,
+		"Scene": "forest",
+		"Text": "Koz entra em sua casa e na sala já se encontra com Zuk sentado numa mesa tomando chá. Ao ver Koz entrar ele sorri e começa falar.",
+		"Next": 0,
+		"dialogID": 35,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 10,
+		"Scene": "forest",
+		"Text": "No próximo dia, Koz se prepara para sair e vai para fora.",
+		"Next": 11,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 11,
+		"Scene": "forest",
+		"Text": "A vila está com pouco movimento à essa hora, permitindo Koz andar pela vila tranquilamente.",
+		"Next": 11,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Ir para o comércio.",
+				"NextP": 12,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Ir para a forja.",
+				"NextP": 13,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Ir para a escola.",
+				"NextP": 14,
+				"NextD": 0
+			},
+		]
+	},
+	{
+		"promptID": 12,
+		"Scene": "forest",
+		"Text": "Ao chegar na área comercial, os comerciantes já estão com suas lojas abertas. Ele se depara com a loja dos alquimistas locais, lembrando do que Gale tinha dito ontem ele entra. A loja tem um cheiro perfumado, além de mostrar algumas poções básicas em suas prateleiras.\nEnquanto olhando as diversas poções, Koz ouve um barulho de vidros balançando. Era Gale levando uma caixa com poções para reestocar e ao ter visão da entrada ele nota Koz.",
+		"Next": 0,
+		"dialogID": 41,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 13,
+		"Scene": "forest",
+		"Text": "A forja da vila está localizada bem na borda. Uvlo é o dono e ferreiro principal, ele é bem maior que outros kobolds assim como sua capacidade física. Apesar de sua aparência intimadora ele é gentil e está sempre disposto a ajudar.",
+		"Next": 0,
+		"dialogID": 53,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 14,
+		"Scene": "forest",
+		"Text": "Zuk normalmente dá aulas para os outros kobolds quando ele não está ajudando na administração da vila. Ao chegar lá, ele vê as crianças brincando no pátio.\nKoz vai em direção a sala de Zuk e vê ele preparando uns materiais para aula.",
+		"Next": 0,
+		"dialogID": 61,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 15,
+		"Scene": "forest",
+		"Text": "Gale põe cuidadosamente a caixa no chão e vai para a parte de trás do estabelecimento. Logo, ele volta com sua mãe Marta.",
+		"Next": 0,
+		"dialogID": 44,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 16,
+		"Scene": "forest",
+		"Text": "Depois de conversar com o pessoal da vila, Koz decide que já é hora para sair e vai em direção a floresta.",
+		"Next": 17,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 17,
+		"Scene": "forest",
+		"Text": "1-1 Floresta",
+		"Next": 17,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Explorar a área",
+				"NextP": 29,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Ir adiante",
+				"NextP": 24,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Voltar para a vila",
+				"NextP": 18,
+				"NextD": 0
+			}
+		]
+	},
+	{
+		"promptID": 18,
+		"Scene": "forest",
+		"Text": "Vila",
+		"Next": 18,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Ir para o comércio.",
+				"NextP": 21,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Ir para a forja.",
+				"NextP": 22,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Ir para a escola.",
+				"NextP": 23,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Voltar para casa",
+				"NextP": 19,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Sair",
+				"NextP": 17,
+				"NextD": 0
+			},
+		]
+	},
+	{
+		"promptID": 19,
+		"Scene": "forest",
+		"Text": "Casa",
+		"Next": 19,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Descançar",
+				"NextP": 20,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Sair",
+				"NextP": 18,
+				"NextD": 0
+			}
+		]
+	},
+	{
+		"promptID": 20,
+		"Scene": "forest",
+		"Text": "Koz descançou recuperando seu HP e MP.",
+		"Next": 19,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 21,
+		"Scene": "forest",
+		"Text": "Alquimistas",
+		"Next": 21,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Comprar/Vender",
+				"NextP": 21,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Quest",
+				"NextP": 21,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Sair",
+				"NextP": 18,
+				"NextD": 0
+			}
+		]
+	},
+	{
+		"promptID": 22,
+		"Scene": "forest",
+		"Text": "Forja",
+		"Next": 22,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Comprar/Vender",
+				"NextP": 22,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Quest",
+				"NextP": 22,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Sair",
+				"NextP": 18,
+				"NextD": 0
+			}
+		]
+	},
+	{
+		"promptID": 23,
+		"Scene": "forest",
+		"Text": "Escola",
+		"Next": 23,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Aprender",
+				"NextP": 23,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Sair",
+				"NextP": 18,
+				"NextD": 0
+			}
+		]
+	},
+	{
+		"promptID": 24,
+		"Scene": "forest",
+		"Text": "1-2 Foresta",
+		"Next": 24,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Explorar a área",
+				"NextP": 30,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Ir adiante",
+				"NextP": 25,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Voltar",
+				"NextP": 17,
+				"NextD": 0
+			}
+		]
+	},
+	{
+		"promptID": 25,
+		"Scene": "forest",
+		"Text": "1-3 Foresta",
+		"Next": 25,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Explorar a área",
+				"NextP": 31,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Ir adiante",
+				"NextP": 26,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Voltar",
+				"NextP": 24,
+				"NextD": 0
+			}
+		]
+	},
+	{
+		"promptID": 26,
+		"Scene": "cliffs",
+		"Text": "2-1 Montanha",
+		"Next": 26,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Explorar a área",
+				"NextP": 35,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Entrar na caverna do Adyr",
+				"NextP": 27,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Voltar",
+				"NextP": 24,
+				"NextD": 0
+			}
+		]
+	},
+	{
+		"promptID": 27,
+		"Scene": "cave",
+		"Text": "Para chegar até a caverna, Koz necessitou de levar apenas o essencial assim não será possível trocar de equipamento dentro dela. 
+		\nAo entrar na caverna, o kobold se depara com uma quantidade de cristals iluminando os corredores. Ele também vê criaturas mais fortes que ele encontrava na floresta.
+		\nHá um caminho indo mais para o fundo da caverna onde supostamente é o dragão Adyr. Vai ser necessário um preparo para confrontá-lo, pois dificilmente será possível escapar dele caso algo der errado.",
+		"Next": 28,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 28,
+		"Scene": "cave",
+		"Text": "3-1 Caverna",
+		"Next": 28,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Explorar a área",
+				"NextP": 36,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Ir até o dragão (Ponto de não retorno!)",
+				"NextP": 37,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Voltar",
+				"NextP": 26,
+				"NextD": 0
+			}
+		]
+	},
+	{
+		"promptID": 29,
+		"Scene": "forest",
+		"Text": "Uma slime verde aparece!",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 3,
+		"Choices": []
+	},
+	{
+		"promptID": 30,
+		"Scene": "forest",
+		"Text": "Um javali selvagem aparece!",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 4,
+		"Choices": []
+	},
+	{
+		"promptID": 31,
+		"Scene": "forest",
+		"Text": "Koz ao explorar a área, ele encontra a erva de fogo que a mãe de Gale tinha pedido.",
+		"Next": 32,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 32,
+		"Scene": "forest",
+		"Text": "Koz obteve uma Erva de Fogo!",
+		"Next": 33,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 33,
+		"Scene": "forest",
+		"Text": "Assim que Koz pegou a planta, ele notou um movimento vindo da vegetação e logo uma vinha vai em direção rapidamente. O kobold desvia e vê que a criatura é uma planta carnivora enorme.",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 5,
+		"Choices": []
+	},
+	{
+		"promptID": 34,
+		"Scene": "forest",
+		"Text": "Uma Planta Carnivora aparece!",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 6,
+		"Choices": []
+	},
+	{
+		"promptID": 35,
+		"Scene": "cliffs",
+		"Text": "Um bandido aparece!",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 7,
+		"Choices": []
+	},
+	{
+		"promptID": 36,
+		"Scene": "cave",
+		"Text": "Um golem ataca Koz!",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 8,
+		"Choices": []
+	},
+	{
+		"promptID": 37,
+		"Scene": "cave",
+		"Text": "Deseja continuar?",
+		"Next": 37,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": [{
+				"TextOP": "Sim",
+				"NextP": 38,
+				"NextD": 0
+			},
+			{
+				"TextOP": "Não",
+				"NextP": 28,
+				"NextD": 0
+			}
+		]
+	},
+	{
+		"promptID": 38,
+		"Scene": "cave",
+		"Text": "Koz respira fundo e segue em direção ao lar de Adyr. Ao andar pelo corredor, as luzes provinda dos cristais da entrada lentamente se dissipam até que Koz mal é capaz de vez alguns metros a sua frente, utilizando uma tocha que ele trouxe aliviou um pouco a escuridão.",
+		"Next": 39,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 39,
+		"Scene": "cave",
+		"Text": "O kobold anda por um tempo considerável perdendo até a noção do tempo desde que ele começou a andar, mas ele não se desespera.",
+		"Next": 40,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 40,
+		"Scene": "cave",
+		"Text": "Uma luz começa a aparecer, o que faz ele apressar os seus passos para ver o que tem do outro lado.",
+		"Next": 41,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 41,
+		"Scene": "cave",
+		"Text": "Ao sair do corredor escuro, Koz se impressiona com a formação geológica. Um espaço enorme com um teto por onde a luz do sol passa e bem no meio desse local estava Adyr dormindo em sua pilha de tesouros.",
+		"Next": 42,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 42,
+		"Scene": "cave",
+		"Text": "Koz tenta andar lentamente para tentar não acordar o dragão, mas assim que ele chega próximo aos tesouros. O enorme dragão preto acorda.",
+		"Next": 0,
+		"dialogID": 87,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 43,
+		"Scene": "cave",
+		"Text": "Adyr levanta e começa a bocejar. É um bocejo meio longo e como Koz nunca havia encontrado um dragão antes, ele não suspeitou de nada quando na verdade esse bocejo era na verdade Adyr carregando um sopro que acaba incenerando Koz.",
+		"Next": 44,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 44,
+		"Scene": "cave",
+		"Text": "Koz morreu! Volte para um save anterior.",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 45,
+		"Scene": "cave",
+		"Text": "Adyr olha para Koz em silêncio analisando suas palavras. Fazendo Koz ficar um pouco nervoso até que o dragão abre a boca.",
+		"Next": 0,
+		"dialogID": 95,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 46,
+		"Scene": "cave",
+		"Text": "O dragão vai à sua pilha e lança uma joia com sua pata até os pés de Koz. O kobold pega animadamente e se curva levemente.",
+		"Next": 0,
+		"dialogID": 96,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 47,
+		"Scene": "cave",
+		"Text": "Koz acena para Adyr que volta deitar em cima de seus tesouros e vai em direção a vila.",
+		"Next": 48,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 48,
+		"Scene": "forest",
+		"Text": "O pessoal da vila celebra pela conquista de Koz. Afinal não é sempre que alguém é capaz de convencer um dragão a dar um de seus tesouros, será que seja pelo que Koz falou ou simplesmente uma bondade do dragão ou algo complementamente diferente, mas isso não importa no momento, pois as aventuras de Koz só irá começar.
+		Fim!\n",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 49,
+		"Scene": "cave",
+		"Text": "Assim que Adyr fala isso, Koz chega a pensar afinal por qual motivo se precisa da validação dos outros para seguir o seu sonho. Talvez ele só tenha chegado à esse pensamento por estar tão perto da morte.
+		\nAo mesmo tempo, ele também não quer desapontar os seus amigos. Koz se despede de Adyr e volta pelo corredor que veio até o caminho para a vila pensativo, pensando como unir essas ideias.",
+		"Next": 50,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 50,
+		"Scene": "cave",
+		"Text": "Chegando numa conclusão, ele fala com Líder Zuk que irá se tornar um aventureiro sem fazer o rito de passegem, mas ele irá voltar para a vila quando ele sentir que fez algo considerável.
+		\nO pessoal da vila ficaram chocados pela quebra de tradição, mas entenderam a motivação de Koz e deixaram ele ir seguir o seu sonho.
+		\nFim!",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 51,
+		"Scene": "cave",
+		"Text": "Adyr olha para Koz com um olhar de surpresa, ninguém nunca o havia perguntado sobre isso e depois de pensar por um tempo ele começa a falar sobre os diversos locais e acontecimentos que ele presenciou. Koz o ouviu e ainda contou um pouco de suas histórias também. Ambos acabaram conversando por horas que o sol que iluminava o local começou a se pôr",
+		"Next": 0,
+		"dialogID": 105,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 52,
+		"Scene": "cave",
+		"Text": "O dragão abaixa sua cabeça para que Koz possa botar o laço nele.",
+		"Next": 0,
+		"dialogID": 112,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 53,
+		"Scene": "cave",
+		"Text": "Adyr se sente um pouco env3rgonhado, mas sobre os elogios de Koz ele se sente mais comfortável.",
+		"Next": 0,
+		"dialogID": 114,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 54,
+		"Scene": "cave",
+		"Text": "Ele vai até um báu e retira uma coroa com sua boca.",
+		"Next": 0,
+		"dialogID": 121,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 55,
+		"Scene": "cave",
+		"Text": "Koz sobre no Adyr e o dragão começa a voar, levando o kobold sob o céu estrelado até perto da vila.",
+		"Next": 0,
+		"dialogID": 128,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 56,
+		"Scene": "forest",
+		"Text": "Koz vai até sua casa com a coroa que Adyr deu de presente e apresenta para Zuk.",
+		"Next": 0,
+		"dialogID": 130,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 57,
+		"Scene": "forest",
+		"Text": "Zuk abraça Koz e começa chorar de alegria.",
+		"Next": 0,
+		"dialogID": 136,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 58,
+		"Scene": "forest",
+		"Text": "Koz acena que sim e se preparam para dormir. No próximo dia, Koz conta sua história para o pessoal da vila sobre ontem. Apesar de muitos quererem acreditar nele era algo que parecia uma fantasia até que um som de batida de asas vindo do céu dá pra ser ouvido.
+		\nEra Adyr que pousa bem no meio da vila.",
+		"Next": 0,
+		"dialogID": 137,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 59,
+		"Scene": "forest",
+		"Text": "A surpresa vai para todos e Koz vai para abraçar o dragão. Depois ele olha para Zuk e Gale que dão um sinal de confirmação.",
+		"Next": 60,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+	{
+		"promptID": 60,
+		"Scene": "forest",
+		"Text": "Koz sobre nas costas de Adyr e ele começa a voar, enquanto a vila anima Koz em sua jornada.\n
+		Fim!",
+		"Next": 0,
+		"dialogID": 0,
+		"encounterID": 0,
+		"Choices": []
+	},
+]

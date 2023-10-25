@@ -1,0 +1,752 @@
+[gd_scene load_steps=21 format=3 uid="uid://yl7dsb1mg6rq"]
+
+[ext_resource type="Script" path="res://scripts/character_tab.gd" id="1_n2oob"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1fjco"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1i3qq"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wluxh"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_86k2h"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_50bkn"]
+bg_color = Color(0.647059, 0.0235294, 0.247059, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1gvmv"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hu2qa"]
+bg_color = Color(0.184314, 0.627451, 0.94902, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hw3q2"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p06h4"]
+bg_color = Color(0.843137, 0.690196, 0.462745, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_db4ou"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tjx6g"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_32khf"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 0.0901961)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4jfrv"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_78htx"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x51v0"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oq0yw"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_47k26"]
+bg_color = Color(0.0509804, 0.0509804, 0.0509804, 1)
+
+[sub_resource type="InputEventKey" id="InputEventKey_t01mr"]
+device = -1
+keycode = 67
+unicode = 99
+
+[sub_resource type="Shortcut" id="Shortcut_xl0kc"]
+events = [SubResource("InputEventKey_t01mr")]
+
+[node name="CharacterTab" type="PanelContainer"]
+offset_right = 1920.0
+offset_bottom = 1078.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_1fjco")
+script = ExtResource("1_n2oob")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Columns" type="HBoxContainer" parent="Margin"]
+layout_mode = 2
+
+[node name="Stats" type="PanelContainer" parent="Margin/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_1i3qq")
+
+[node name="Left" type="VBoxContainer" parent="Margin/Columns/Stats"]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+
+[node name="PCStats" type="PanelContainer" parent="Margin/Columns/Stats/Left"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wluxh")
+
+[node name="MarginContainer" type="MarginContainer" parent="Margin/Columns/Stats/Left/PCStats"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="PC" type="VBoxContainer" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="ID" type="HBoxContainer" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/separation = 20
+
+[node name="PCName" type="Label" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC/ID"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "PC
+"
+
+[node name="Level" type="Label" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC/ID"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Level 1"
+
+[node name="HP" type="HBoxContainer" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC"]
+layout_mode = 2
+
+[node name="HPL" type="Label" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC/HP"]
+custom_minimum_size = Vector2(50, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+text = "HP: "
+
+[node name="HPBar" type="ProgressBar" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC/HP"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_86k2h")
+theme_override_styles/fill = SubResource("StyleBoxFlat_50bkn")
+value = 50.0
+show_percentage = false
+
+[node name="HPValue" type="Label" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC/HP/HPBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -34.0
+offset_top = -18.0
+offset_right = 91.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "10/20
+"
+
+[node name="MP" type="HBoxContainer" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC"]
+layout_mode = 2
+
+[node name="MPL" type="Label" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC/MP"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+text = "MP:"
+
+[node name="MPBar" type="ProgressBar" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC/MP"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_1gvmv")
+theme_override_styles/fill = SubResource("StyleBoxFlat_hu2qa")
+value = 50.0
+show_percentage = false
+
+[node name="MPValue" type="Label" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC/MP/MPBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "5/10
+"
+
+[node name="EXP" type="HBoxContainer" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC"]
+layout_mode = 2
+
+[node name="EXPL" type="Label" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC/EXP"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 24
+text = "EXP:"
+
+[node name="EXPBar" type="ProgressBar" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC/EXP"]
+custom_minimum_size = Vector2(0, 40)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_hw3q2")
+theme_override_styles/fill = SubResource("StyleBoxFlat_p06h4")
+value = 50.0
+show_percentage = false
+
+[node name="EXPValue" type="Label" parent="Margin/Columns/Stats/Left/PCStats/MarginContainer/PC/EXP/EXPBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -15.0
+offset_right = 25.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 24
+text = "5/10
+"
+
+[node name="AttributesBox" type="PanelContainer" parent="Margin/Columns/Stats/Left"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_db4ou")
+
+[node name="MarginContainer" type="MarginContainer" parent="Margin/Columns/Stats/Left/AttributesBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 50
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 50
+theme_override_constants/margin_bottom = 50
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 30
+
+[node name="GridContainer" type="GridContainer" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 30
+columns = 2
+
+[node name="StrLabel" type="Label" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Força (For):
+"
+
+[node name="Str" type="HBoxContainer" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+tooltip_text = "Força aumenta o dano físico"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Str"]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="StrMinusButton" type="Button" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Str/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Força aumenta o dano físico"
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_tjx6g")
+text = "-"
+
+[node name="StrScore" type="Label" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Str/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="StrPlusButton" type="Button" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Str/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Força aumenta o dano físico"
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_32khf")
+text = "+"
+
+[node name="IntLabel" type="Label" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = " Inteligência (Int): 
+"
+
+[node name="Int" type="HBoxContainer" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+tooltip_text = "Inteligência aumenta o dano mágico"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Int"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 20
+
+[node name="IntMinusButton" type="Button" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Int/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Inteligência aumenta o dano mágico"
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_tjx6g")
+text = "-"
+
+[node name="IntScore" type="Label" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Int/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="IntPlusButton" type="Button" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Int/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Inteligência aumenta o dano mágico"
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_32khf")
+text = "+"
+
+[node name="ConLabel" type="Label" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Constituição (Con):"
+
+[node name="Con" type="HBoxContainer" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+tooltip_text = "Constituição aumenta a vida, defesa e diminui a chance de uma magia ser cancelada."
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Con"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 20
+
+[node name="ConMinusButton" type="Button" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Con/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Constituição aumenta a vida, defesa e diminui a chance de uma magia ser cancelada."
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_tjx6g")
+text = "-"
+
+[node name="ConScore" type="Label" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Con/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "1"
+
+[node name="ConPlusButton" type="Button" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Con/HBoxContainer"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Constituição aumenta a vida, defesa e diminui a chance de uma magia ser cancelada."
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_32khf")
+text = "+"
+
+[node name="AttPoints" type="HBoxContainer" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/AttPoints"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Pontos para gastar: "
+
+[node name="Points" type="Label" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/AttPoints/Label"]
+layout_mode = 2
+offset_left = 293.0
+offset_right = 310.0
+offset_bottom = 45.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "0
+"
+
+[node name="Buttons" type="HBoxContainer" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+
+[node name="ResetButton" type="Button" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/Buttons"]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Constituição aumenta a vida, defesa e diminui a chance de uma magia ser cancelada."
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_tjx6g")
+text = "Resetar"
+
+[node name="ConfirmButton" type="Button" parent="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/Buttons"]
+custom_minimum_size = Vector2(200, 75)
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Constituição aumenta a vida, defesa e diminui a chance de uma magia ser cancelada."
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_tjx6g")
+text = "Confirmar
+"
+
+[node name="Other" type="PanelContainer" parent="Margin/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_4jfrv")
+
+[node name="Right" type="VBoxContainer" parent="Margin/Columns/Other"]
+layout_mode = 2
+
+[node name="CombatStats" type="PanelContainer" parent="Margin/Columns/Other/Right"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_78htx")
+
+[node name="MarginContainer" type="MarginContainer" parent="Margin/Columns/Other/Right/CombatStats"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 50
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Phys" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Dano Físico: "
+
+[node name="PhysDamage" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer/Phys"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.784
+offset_left = 185.0
+offset_top = -1.0
+offset_right = 22.0
+offset_bottom = 8.72
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "0
+"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 80
+
+[node name="Weapon" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Dano da arma: "
+
+[node name="WpnDmg" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer/HBoxContainer/Weapon"]
+layout_mode = 0
+offset_left = 220.0
+offset_right = 237.0
+offset_bottom = 45.0
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "0
+"
+
+[node name="Mod" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Modificador (For): "
+
+[node name="PhysMod" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer/HBoxContainer/Mod"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 2.111
+anchor_top = -1.07
+anchor_right = 2.111
+anchor_bottom = -1.07
+offset_left = -294.415
+offset_top = 49.15
+offset_right = -277.415
+offset_bottom = 94.15
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "0
+"
+
+[node name="Mag" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Modificador (Int) : "
+
+[node name="MagMod" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer/Mag"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.784
+offset_left = 267.0
+offset_top = 3.0
+offset_right = 18.0
+offset_bottom = 12.72
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "0
+"
+
+[node name="Def" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Defesa : "
+
+[node name="Defense" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer/Def"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.784
+offset_left = 126.0
+offset_top = 1.0
+offset_right = 20.0
+offset_bottom = 10.72
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "0
+"
+
+[node name="Eva" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Evasão : "
+
+[node name="Evasion" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer/Eva"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.784
+offset_left = 126.0
+offset_top = 1.0
+offset_right = 20.0
+offset_bottom = 10.72
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "0
+"
+
+[node name="Conc" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Perda de concentração:"
+
+[node name="Concentration" type="Label" parent="Margin/Columns/Other/Right/CombatStats/MarginContainer/VBoxContainer/Conc"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 0.784
+offset_left = 347.0
+offset_top = 1.0
+offset_right = 25.0
+offset_bottom = 10.72
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "0
+"
+
+[node name="Equips" type="PanelContainer" parent="Margin/Columns/Other/Right"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_x51v0")
+
+[node name="MarginContainer" type="MarginContainer" parent="Margin/Columns/Other/Right/Equips"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Equipped" type="GridContainer" parent="Margin/Columns/Other/Right/Equips/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
+columns = 8
+
+[node name="Space" type="Label" parent="Margin/Columns/Other/Right/Equips/MarginContainer/Equipped"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "
+"
+
+[node name="Name" type="Label" parent="Margin/Columns/Other/Right/Equips/MarginContainer/Equipped"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Nome 
+"
+
+[node name="Damage" type="Label" parent="Margin/Columns/Other/Right/Equips/MarginContainer/Equipped"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Dano
+"
+
+[node name="Modifier" type="Label" parent="Margin/Columns/Other/Right/Equips/MarginContainer/Equipped"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Mod.
+"
+
+[node name="Defense" type="Label" parent="Margin/Columns/Other/Right/Equips/MarginContainer/Equipped"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Def
+"
+
+[node name="HP" type="Label" parent="Margin/Columns/Other/Right/Equips/MarginContainer/Equipped"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "HP
+"
+
+[node name="MP" type="Label" parent="Margin/Columns/Other/Right/Equips/MarginContainer/Equipped"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "MP
+"
+
+[node name="Evasion" type="Label" parent="Margin/Columns/Other/Right/Equips/MarginContainer/Equipped"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "Evasão
+"
+
+[node name="ExitButton" type="Button" parent="Margin"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_oq0yw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_47k26")
+shortcut = SubResource("Shortcut_xl0kc")
+text = "X"
+
+[connection signal="pressed" from="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Str/HBoxContainer/StrMinusButton" to="." method="_on_str_minus_button_pressed"]
+[connection signal="pressed" from="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Str/HBoxContainer/StrPlusButton" to="." method="_on_str_plus_button_pressed"]
+[connection signal="pressed" from="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Int/HBoxContainer/IntMinusButton" to="." method="_on_int_minus_button_pressed"]
+[connection signal="pressed" from="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Int/HBoxContainer/IntPlusButton" to="." method="_on_int_plus_button_pressed"]
+[connection signal="pressed" from="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Con/HBoxContainer/ConMinusButton" to="." method="_on_con_minus_button_pressed"]
+[connection signal="pressed" from="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/GridContainer/Con/HBoxContainer/ConPlusButton" to="." method="_on_con_plus_button_pressed"]
+[connection signal="pressed" from="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/Buttons/ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="pressed" from="Margin/Columns/Stats/Left/AttributesBox/MarginContainer/VBoxContainer/Buttons/ConfirmButton" to="." method="_on_confirm_button_pressed"]
+[connection signal="pressed" from="Margin/ExitButton" to="." method="_on_exit_button_pressed"]

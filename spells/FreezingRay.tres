@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Spells" load_steps=2 format=3 uid="uid://d1sxe20dhnuyh"]
+
+[ext_resource type="Script" path="res://resources/spells.gd" id="1_n0drv"]
+
+[resource]
+script = ExtResource("1_n0drv")
+Name = "Raio Congelante"
+Description = "Mande um raio de gelo a baixas temperaturas para congeral o inimigo.
+Dano: 3d8 + 2*Int. Mod
+Elemento: Água
+Cast time: 2
+Inteligência requerida: 
+Custo de aprendizado: 75 G"
+MP_Cost = 15
+Level = 2
+Damage = 8
+Multiplier = 3
+Modifier = 2
+Element = 2
+CastTime = 2
+IntRequirement = 5
+LearnCost = 75

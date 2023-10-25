@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Consumables" load_steps=2 format=3 uid="uid://cwgrbwd6m8iej"]
+
+[ext_resource type="Script" path="res://resources/consumable.gd" id="1_5ty8m"]
+
+[resource]
+script = ExtResource("1_5ty8m")
+HP_Restored = 20
+MP_Restored = 0
+TypeReduction = 0
+DamageReduction = 0
+Damage = 0
+Defense = 0
+EffectTurns = 0
+BattleRequired = false
+Name = "Poção de vida (P)"
+Description = "Uma poção vermelha pequena que recupera poucos pontos de vida.
++20 HP
+Compra: 10 G
+Venda: 2 G"
+BuyPrice = 10
+SellPrice = 7
+Stackable = true
+ItemType = 2

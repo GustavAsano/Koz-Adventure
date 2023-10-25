@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Armors" load_steps=2 format=3 uid="uid://hbea3iqcpwyi"]
+
+[ext_resource type="Script" path="res://resources/armors.gd" id="1_p78dr"]
+
+[resource]
+script = ExtResource("1_p78dr")
+Defense = 5
+HPExtra = 10
+MPExtra = 10
+Modifier = 0
+ModType = 0
+Weight = 0
+Armor_Type = 1
+Evasion = 10
+Resistance = Array[Resource("res://resources/resistance.gd")]([])
+Name = "Roupas Simples"
+Description = "Uma vestimenta simples que protege pouco contra dano.
+Defesa: +5 
+HP: +10
+MP: +10
+Compra: 20 G
+Venda: 15 G"
+BuyPrice = 20
+SellPrice = 15
+Stackable = false
+ItemType = 1

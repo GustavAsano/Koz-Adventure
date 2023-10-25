@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="Consumables" load_steps=2 format=3 uid="uid://piseg2kcd54x"]
+
+[ext_resource type="Script" path="res://resources/consumable.gd" id="1_4m6up"]
+
+[resource]
+script = ExtResource("1_4m6up")
+HP_Restored = 0
+MP_Restored = 0
+TypeReduction = 1
+DamageReduction = 50
+Damage = 0
+Defense = 0
+EffectTurns = 10
+BattleRequired = true
+Name = "Poção de resistência a fogo"
+Description = "Uma poção de que protege o usuário contra fogo.
+Resistência a fogo: +50%
+Compra: 50 G
+Venda: 37 G"
+BuyPrice = 50
+SellPrice = 37
+Stackable = true
+ItemType = 2

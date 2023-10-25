@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="InventoryData" load_steps=19 format=3 uid="uid://crner0gua27ht"]
+
+[ext_resource type="Script" path="res://resources/Inventory.gd" id="1_sapgr"]
+[ext_resource type="Resource" uid="uid://bnsomrqavh2js" path="res://items/Shortsword.tres" id="2_5mhr2"]
+[ext_resource type="Script" path="res://resources/ItemSlot.gd" id="3_sdw83"]
+[ext_resource type="Resource" uid="uid://bok3cmk7dbrvg" path="res://items/Rod.tres" id="4_tubx3"]
+[ext_resource type="Resource" uid="uid://df4m8mfk54rww" path="res://items/PlateArmor.tres" id="5_61ift"]
+[ext_resource type="Resource" uid="uid://b0xdn8r1mflxf" path="res://items/WhiteRibbon.tres" id="6_aac38"]
+[ext_resource type="Resource" uid="uid://gmrnjl4xds1g" path="res://items/WarriorHelmet.tres" id="7_noqwe"]
+[ext_resource type="Resource" uid="uid://b7d668xo0ph5l" path="res://items/WizardHat.tres" id="8_hmf0u"]
+[ext_resource type="Resource" uid="uid://bqwgk4cn1snle" path="res://items/ThiefCloak.tres" id="9_fx22q"]
+[ext_resource type="Resource" uid="uid://bik14d6pnb67f" path="res://items/Greatsword.tres" id="10_xrhpt"]
+
+[sub_resource type="Resource" id="Resource_httkw"]
+script = ExtResource("3_sdw83")
+qnt = 99
+baseItem = ExtResource("2_5mhr2")
+
+[sub_resource type="Resource" id="Resource_yxcn3"]
+script = ExtResource("3_sdw83")
+qnt = 99
+baseItem = ExtResource("4_tubx3")
+
+[sub_resource type="Resource" id="Resource_h5qtf"]
+script = ExtResource("3_sdw83")
+qnt = 99
+baseItem = ExtResource("5_61ift")
+
+[sub_resource type="Resource" id="Resource_s555u"]
+script = ExtResource("3_sdw83")
+qnt = 1
+baseItem = ExtResource("6_aac38")
+
+[sub_resource type="Resource" id="Resource_8wk6k"]
+script = ExtResource("3_sdw83")
+qnt = 99
+baseItem = ExtResource("7_noqwe")
+
+[sub_resource type="Resource" id="Resource_u22c0"]
+script = ExtResource("3_sdw83")
+qnt = 99
+baseItem = ExtResource("8_hmf0u")
+
+[sub_resource type="Resource" id="Resource_xxy0h"]
+script = ExtResource("3_sdw83")
+qnt = 99
+baseItem = ExtResource("9_fx22q")
+
+[sub_resource type="Resource" id="Resource_r8dh0"]
+script = ExtResource("3_sdw83")
+qnt = 99
+baseItem = ExtResource("10_xrhpt")
+
+[resource]
+script = ExtResource("1_sapgr")
+slotDatas = Array[ExtResource("3_sdw83")]([SubResource("Resource_httkw"), SubResource("Resource_yxcn3"), SubResource("Resource_h5qtf"), SubResource("Resource_s555u"), SubResource("Resource_8wk6k"), SubResource("Resource_u22c0"), SubResource("Resource_xxy0h"), SubResource("Resource_r8dh0")])

@@ -1,0 +1,945 @@
+[gd_scene load_steps=64 format=3 uid="uid://dvf1vl2g086nh"]
+
+[ext_resource type="Texture2D" uid="uid://vth53p48ja1v" path="res://BG/forest.png" id="1_6e5nt"]
+[ext_resource type="Script" path="res://scripts/Main.gd" id="1_khur8"]
+[ext_resource type="PackedScene" uid="uid://cc4dxmw22uph1" path="res://log_text.tscn" id="3_7c3ew"]
+[ext_resource type="Texture2D" uid="uid://dlp0uyvqcum3f" path="res://BG/cliffs.png" id="3_7ekpn"]
+[ext_resource type="PackedScene" uid="uid://buchh3yymht83" path="res://spells_tab.tscn" id="6_eoyea"]
+[ext_resource type="Texture2D" uid="uid://ct4x6yah6084b" path="res://BG/cave.png" id="6_w3mhu"]
+[ext_resource type="PackedScene" uid="uid://capvbpyoija13" path="res://character_tab.tscn" id="6_wcp5e"]
+[ext_resource type="PackedScene" uid="uid://b7ivx7nud3xs2" path="res://inventory_tab.tscn" id="7_vodkn"]
+[ext_resource type="Script" path="res://scripts/StoryControl.gd" id="9_e6yfd"]
+[ext_resource type="Script" path="res://scripts/QuestsControl.gd" id="10_cx5p6"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_do2ml"]
+texture = ExtResource("1_6e5nt")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cf4wq"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x33rb"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_76si4"]
+bg_color = Color(0.647059, 0.0235294, 0.247059, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7kigw"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_65vnk"]
+bg_color = Color(0.184314, 0.627451, 0.94902, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rvirm"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_y0mwa"]
+bg_color = Color(0.843137, 0.690196, 0.462745, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vwiap"]
+bg_color = Color(0.196078, 0.619608, 0.980392, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jjwji"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0oirt"]
+content_margin_top = 10.0
+content_margin_bottom = 10.0
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="InputEventKey" id="InputEventKey_80ta0"]
+device = -1
+keycode = 49
+unicode = 49
+
+[sub_resource type="Shortcut" id="Shortcut_kuyj7"]
+events = [SubResource("InputEventKey_80ta0")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_kjm3n"]
+device = -1
+keycode = 50
+unicode = 50
+
+[sub_resource type="Shortcut" id="Shortcut_wqprq"]
+events = [SubResource("InputEventKey_kjm3n")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_je3b3"]
+device = -1
+keycode = 51
+unicode = 51
+
+[sub_resource type="Shortcut" id="Shortcut_poq1s"]
+events = [SubResource("InputEventKey_je3b3")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_pie1u"]
+device = -1
+keycode = 52
+unicode = 52
+
+[sub_resource type="Shortcut" id="Shortcut_s0q65"]
+events = [SubResource("InputEventKey_pie1u")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_t5tmr"]
+device = -1
+keycode = 53
+unicode = 53
+
+[sub_resource type="Shortcut" id="Shortcut_gjgfc"]
+events = [SubResource("InputEventKey_t5tmr")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_iksi8"]
+device = -1
+keycode = 54
+unicode = 54
+
+[sub_resource type="Shortcut" id="Shortcut_3c034"]
+events = [SubResource("InputEventKey_iksi8")]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hi5jo"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+
+[sub_resource type="InputEventKey" id="InputEventKey_gx452"]
+device = -1
+keycode = 49
+unicode = 49
+
+[sub_resource type="Shortcut" id="Shortcut_hgyck"]
+events = [SubResource("InputEventKey_gx452")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_syl2u"]
+device = -1
+keycode = 50
+unicode = 50
+
+[sub_resource type="Shortcut" id="Shortcut_wc65r"]
+events = [SubResource("InputEventKey_syl2u")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_efkjo"]
+device = -1
+keycode = 51
+unicode = 51
+
+[sub_resource type="Shortcut" id="Shortcut_4gsb1"]
+events = [SubResource("InputEventKey_efkjo")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_bf43g"]
+device = -1
+keycode = 52
+unicode = 52
+
+[sub_resource type="Shortcut" id="Shortcut_qcvfd"]
+events = [SubResource("InputEventKey_bf43g")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_ayqes"]
+device = -1
+keycode = 53
+unicode = 53
+
+[sub_resource type="Shortcut" id="Shortcut_2py1w"]
+events = [SubResource("InputEventKey_ayqes")]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j2yem"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6gmpj"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gie7t"]
+content_margin_left = 10.0
+content_margin_top = 5.0
+content_margin_right = 10.0
+content_margin_bottom = 5.0
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="InputEventKey" id="InputEventKey_l6bnc"]
+keycode = 67
+
+[sub_resource type="Shortcut" id="Shortcut_1dkjk"]
+events = [SubResource("InputEventKey_l6bnc")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_8hluu"]
+device = -1
+keycode = 73
+unicode = 105
+
+[sub_resource type="Shortcut" id="Shortcut_80hwi"]
+events = [SubResource("InputEventKey_8hluu")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_47edq"]
+keycode = 79
+
+[sub_resource type="Shortcut" id="Shortcut_ws0t7"]
+events = [SubResource("InputEventKey_47edq")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_wdys3"]
+device = -1
+keycode = 80
+unicode = 80
+
+[sub_resource type="Shortcut" id="Shortcut_r3oew"]
+events = [SubResource("InputEventKey_wdys3")]
+
+[sub_resource type="InputEventKey" id="InputEventKey_c4yja"]
+device = -1
+keycode = 76
+unicode = 108
+
+[sub_resource type="Shortcut" id="Shortcut_4dymd"]
+events = [SubResource("InputEventKey_c4yja")]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ll86"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wnn16"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fd7xn"]
+bg_color = Color(0.647059, 0.0235294, 0.247059, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iyg4n"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8v4oq"]
+bg_color = Color(0.184314, 0.627451, 0.94902, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4fs05"]
+bg_color = Color(0.705882, 0.0431373, 0.309804, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[node name="Main" type="Control"]
+layout_mode = 3
+anchor_right = 0.997
+anchor_bottom = 1.0
+offset_right = 5.76001
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_khur8")
+dialogPath = "res://json/dialogs.json"
+promptPath = "res://json/prompts.json"
+encountersPath = "res://json/encounters.json"
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="BG" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_do2ml")
+
+[node name="MarginContainer" type="MarginContainer" parent="BG"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BG/MarginContainer"]
+layout_mode = 2
+
+[node name="Left" type="VBoxContainer" parent="BG/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 300)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="PCStats" type="PanelContainer" parent="BG/MarginContainer/HBoxContainer/Left"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_cf4wq")
+
+[node name="MarginContainer" type="MarginContainer" parent="BG/MarginContainer/HBoxContainer/Left/PCStats"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="PC" type="VBoxContainer" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="ID" type="HBoxContainer" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/separation = 20
+
+[node name="PCName" type="Label" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC/ID"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "PC
+"
+
+[node name="Level" type="Label" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC/ID"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Level 1"
+
+[node name="HP" type="HBoxContainer" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC"]
+layout_mode = 2
+
+[node name="HPL" type="Label" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC/HP"]
+custom_minimum_size = Vector2(50, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 22
+text = "HP: "
+
+[node name="HPBar" type="ProgressBar" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC/HP"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_x33rb")
+theme_override_styles/fill = SubResource("StyleBoxFlat_76si4")
+value = 50.0
+show_percentage = false
+
+[node name="HPValue" type="Label" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC/HP/HPBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -26.0
+offset_top = -14.0
+offset_right = 23.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "10/20
+"
+
+[node name="MP" type="HBoxContainer" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC"]
+layout_mode = 2
+
+[node name="MPL" type="Label" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC/MP"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 22
+text = "MP:"
+
+[node name="MPBar" type="ProgressBar" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC/MP"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_7kigw")
+theme_override_styles/fill = SubResource("StyleBoxFlat_65vnk")
+value = 50.0
+show_percentage = false
+
+[node name="MPValue" type="Label" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC/MP/MPBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "5/10
+"
+
+[node name="EXP" type="HBoxContainer" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC"]
+layout_mode = 2
+
+[node name="EXPL" type="Label" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC/EXP"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 22
+text = "EXP:"
+
+[node name="EXPBar" type="ProgressBar" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC/EXP"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_rvirm")
+theme_override_styles/fill = SubResource("StyleBoxFlat_y0mwa")
+value = 50.0
+show_percentage = false
+
+[node name="EXPValue" type="Label" parent="BG/MarginContainer/HBoxContainer/Left/PCStats/MarginContainer/PC/EXP/EXPBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -23.0
+offset_top = -15.0
+offset_right = 25.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "5/10
+"
+
+[node name="PCPortrait" type="PanelContainer" parent="BG/MarginContainer/HBoxContainer/Left"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+size_flags_vertical = 10
+theme_override_styles/panel = SubResource("StyleBoxFlat_vwiap")
+
+[node name="PCName" type="Label" parent="BG/MarginContainer/HBoxContainer/Left/PCPortrait"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "PC
+"
+
+[node name="PCImg" type="TextureRect" parent="BG/MarginContainer/HBoxContainer/Left/PCPortrait"]
+visible = false
+layout_mode = 2
+texture = ExtResource("3_7ekpn")
+expand_mode = 4
+
+[node name="Center" type="VBoxContainer" parent="BG/MarginContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Prompt" type="PanelContainer" parent="BG/MarginContainer/HBoxContainer/Center"]
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_jjwji")
+
+[node name="MarginContainer" type="MarginContainer" parent="BG/MarginContainer/HBoxContainer/Center/Prompt"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="BattlePanel" type="PanelContainer" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer"]
+layout_mode = 2
+
+[node name="BattleCommands" type="VBoxContainer" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="AttackButton" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands"]
+layout_mode = 2
+tooltip_text = "Atacar com sua arma"
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0oirt")
+shortcut = SubResource("Shortcut_kuyj7")
+text = "[1] Atacar"
+
+[node name="CastButton" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands"]
+layout_mode = 2
+tooltip_text = "Abrir a aba de magias"
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0oirt")
+shortcut = SubResource("Shortcut_wqprq")
+text = "[2] Magia"
+
+[node name="DefendButton" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands"]
+layout_mode = 2
+tooltip_text = "Defender o próximo golpe (-50% de dano)"
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0oirt")
+shortcut = SubResource("Shortcut_poq1s")
+text = "[3] Defender"
+
+[node name="EvadeButton" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands"]
+layout_mode = 2
+tooltip_text = "Tentar desviar do próximo ataque (20% de esquiva)"
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0oirt")
+shortcut = SubResource("Shortcut_s0q65")
+text = "[4] Desviar"
+
+[node name="ItemButton" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands"]
+layout_mode = 2
+tooltip_text = "Abrir a aba de itens utilizáveis"
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0oirt")
+shortcut = SubResource("Shortcut_gjgfc")
+text = "[5] Itens"
+
+[node name="RunButton" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands"]
+layout_mode = 2
+tooltip_text = "Tentar fugir da batalha"
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0oirt")
+shortcut = SubResource("Shortcut_3c034")
+text = "[6] Fugir"
+
+[node name="Scroll" type="ScrollContainer" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer"]
+visible = false
+layout_mode = 2
+horizontal_scroll_mode = 0
+vertical_scroll_mode = 2
+
+[node name="Logs" type="VBoxContainer" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/Scroll"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="panel" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/Scroll/Logs" instance=ExtResource("3_7c3ew")]
+layout_mode = 2
+
+[node name="PromptText" type="Panel" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_hi5jo")
+
+[node name="MarginContainer" type="MarginContainer" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="PromptText" type="RichTextLabel" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 5
+theme_override_font_sizes/normal_font_size = 26
+text = "This is where the prompt will go! 
+"
+fit_content = true
+
+[node name="Label" type="Label" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_font_sizes/font_size = 26
+text = ">"
+
+[node name="Op1Button" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0oirt")
+shortcut = SubResource("Shortcut_hgyck")
+text = "[1] Opcão 1"
+
+[node name="Op2Button" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0oirt")
+shortcut = SubResource("Shortcut_wc65r")
+text = "[2] Opção 2"
+
+[node name="Op3Button" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0oirt")
+shortcut = SubResource("Shortcut_4gsb1")
+text = "[3] Opção 3"
+
+[node name="Op4Button" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer"]
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0oirt")
+shortcut = SubResource("Shortcut_qcvfd")
+text = "[4] Opção 4"
+
+[node name="Op5Button" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer"]
+visible = false
+layout_mode = 2
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_0oirt")
+shortcut = SubResource("Shortcut_2py1w")
+text = "[5] Opção 5"
+
+[node name="Windows" type="PanelContainer" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer"]
+visible = false
+layout_mode = 2
+
+[node name="InventoryTab" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/Windows" instance=ExtResource("7_vodkn")]
+layout_mode = 2
+
+[node name="SpellsTab" parent="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/Windows" instance=ExtResource("6_eoyea")]
+layout_mode = 2
+
+[node name="DialogueBox" type="PanelContainer" parent="BG/MarginContainer/HBoxContainer/Center"]
+custom_minimum_size = Vector2(0, 242)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_j2yem")
+
+[node name="MarginContainer" type="MarginContainer" parent="BG/MarginContainer/HBoxContainer/Center/DialogueBox"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BG/MarginContainer/HBoxContainer/Center/DialogueBox/MarginContainer"]
+layout_mode = 2
+
+[node name="Names" type="HBoxContainer" parent="BG/MarginContainer/HBoxContainer/Center/DialogueBox/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PCName" type="Label" parent="BG/MarginContainer/HBoxContainer/Center/DialogueBox/MarginContainer/VBoxContainer/Names"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_font_sizes/font_size = 22
+text = "PC"
+
+[node name="NPCName" type="Label" parent="BG/MarginContainer/HBoxContainer/Center/DialogueBox/MarginContainer/VBoxContainer/Names"]
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_font_sizes/font_size = 22
+text = "NPC"
+
+[node name="DialogText" type="RichTextLabel" parent="BG/MarginContainer/HBoxContainer/Center/DialogueBox/MarginContainer/VBoxContainer"]
+clip_contents = false
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/normal_font_size = 26
+text = " This is where the dialogue text will go!"
+
+[node name="Label" type="Label" parent="BG/MarginContainer/HBoxContainer/Center/DialogueBox/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_font_sizes/font_size = 26
+text = ">"
+
+[node name="Options" type="PanelContainer" parent="BG/MarginContainer/HBoxContainer/Center"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_6gmpj")
+
+[node name="MarginContainer" type="MarginContainer" parent="BG/MarginContainer/HBoxContainer/Center/Options"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 5
+
+[node name="Gold" type="Label" parent="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_font_sizes/font_size = 18
+text = "100 G"
+
+[node name="Buttons" type="HBoxContainer" parent="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 10
+
+[node name="CharButton" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Abrir a aba de personagem"
+focus_mode = 0
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_gie7t")
+shortcut = SubResource("Shortcut_1dkjk")
+text = "[C] Personagem"
+
+[node name="InvButton" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Abrir o inventário"
+focus_mode = 0
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_gie7t")
+shortcut = SubResource("Shortcut_80hwi")
+text = "[I] Inventário"
+
+[node name="SaveButton" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Salvar o progesso"
+focus_mode = 0
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_gie7t")
+shortcut = SubResource("Shortcut_ws0t7")
+text = "[O] Save"
+
+[node name="LoadButton" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Carregar um save"
+focus_mode = 0
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_gie7t")
+shortcut = SubResource("Shortcut_r3oew")
+text = "[P] Load"
+
+[node name="LogsButton" type="Button" parent="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer/Buttons"]
+layout_mode = 2
+size_flags_horizontal = 4
+tooltip_text = "Mostrar Logs (Aperte uma vez para mostrar e novamente para voltar)"
+focus_mode = 0
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 18
+theme_override_styles/normal = SubResource("StyleBoxFlat_gie7t")
+toggle_mode = true
+shortcut = SubResource("Shortcut_4dymd")
+text = "[L] Logs"
+
+[node name="Right" type="VBoxContainer" parent="BG/MarginContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 200)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="NPCStats" type="PanelContainer" parent="BG/MarginContainer/HBoxContainer/Right"]
+visible = false
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_0ll86")
+
+[node name="MarginContainer" type="MarginContainer" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="NPC" type="VBoxContainer" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="ID" type="HBoxContainer" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer/NPC"]
+layout_mode = 2
+size_flags_horizontal = 0
+
+[node name="NPCName" type="Label" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer/NPC/ID"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "NPC
+"
+
+[node name="Level" type="Label" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer/NPC/ID"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 22
+text = "Level 1"
+
+[node name="HP" type="HBoxContainer" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer/NPC"]
+layout_mode = 2
+
+[node name="HPL" type="Label" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer/NPC/HP"]
+custom_minimum_size = Vector2(50, 30)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 22
+text = "HP: "
+
+[node name="HPBar" type="ProgressBar" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer/NPC/HP"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_wnn16")
+theme_override_styles/fill = SubResource("StyleBoxFlat_fd7xn")
+value = 50.0
+show_percentage = false
+
+[node name="HPValue" type="Label" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer/NPC/HP/HPBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -26.0
+offset_top = -14.0
+offset_right = 23.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "10/20
+"
+
+[node name="MP" type="HBoxContainer" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer/NPC"]
+layout_mode = 2
+
+[node name="MPL" type="Label" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer/NPC/MP"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 22
+text = "MP:"
+
+[node name="MPBar" type="ProgressBar" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer/NPC/MP"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+theme_override_styles/background = SubResource("StyleBoxFlat_iyg4n")
+theme_override_styles/fill = SubResource("StyleBoxFlat_8v4oq")
+value = 50.0
+show_percentage = false
+
+[node name="MPValue" type="Label" parent="BG/MarginContainer/HBoxContainer/Right/NPCStats/MarginContainer/NPC/MP/MPBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 22
+text = "5/10
+"
+
+[node name="NPCPortrait" type="PanelContainer" parent="BG/MarginContainer/HBoxContainer/Right"]
+visible = false
+custom_minimum_size = Vector2(0, 300)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4fs05")
+
+[node name="NPCName" type="Label" parent="BG/MarginContainer/HBoxContainer/Right/NPCPortrait"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_font_sizes/font_size = 30
+text = "NPC
+"
+
+[node name="NPCImg" type="TextureRect" parent="BG/MarginContainer/HBoxContainer/Right/NPCPortrait"]
+visible = false
+layout_mode = 2
+texture = ExtResource("6_w3mhu")
+expand_mode = 4
+
+[node name="MarginContainer2" type="MarginContainer" parent="BG"]
+visible = false
+layout_mode = 2
+theme_override_constants/margin_left = 75
+theme_override_constants/margin_top = 75
+theme_override_constants/margin_right = 75
+theme_override_constants/margin_bottom = 75
+
+[node name="CharacterTab" parent="BG/MarginContainer2" instance=ExtResource("6_wcp5e")]
+layout_mode = 2
+
+[node name="InventoryTab" parent="BG/MarginContainer2" instance=ExtResource("7_vodkn")]
+layout_mode = 2
+
+[node name="Story" type="Node" parent="."]
+script = ExtResource("9_e6yfd")
+
+[node name="Quests" type="Node" parent="."]
+script = ExtResource("10_cx5p6")
+
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands/AttackButton" to="." method="_on_attack_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands/CastButton" to="." method="_on_cast_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands/DefendButton" to="." method="_on_defend_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands/EvadeButton" to="." method="_on_evade_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands/ItemButton" to="." method="_on_item_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/BattlePanel/BattleCommands/RunButton" to="." method="_on_run_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer/Op1Button" to="." method="_on_op_1_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer/Op2Button" to="." method="_on_op_2_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer/Op3Button" to="." method="_on_op_3_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer/Op4Button" to="." method="_on_op_4_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Prompt/MarginContainer/PromptText/MarginContainer/VBoxContainer/Op5Button" to="." method="_on_op_5_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer/Buttons/CharButton" to="." method="_on_char_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer/Buttons/InvButton" to="." method="_on_inv_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer/Buttons/SaveButton" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer/Buttons/LoadButton" to="." method="_on_load_button_pressed"]
+[connection signal="toggled" from="BG/MarginContainer/HBoxContainer/Center/Options/MarginContainer/Buttons/LogsButton" to="." method="_on_logs_button_toggled"]

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="SpellList" load_steps=7 format=3 uid="uid://bjh6rw484jutn"]
+
+[ext_resource type="Script" path="res://resources/SpellList.gd" id="1_eqlvj"]
+[ext_resource type="Resource" uid="uid://bgdpwtj1mibrx" path="res://spells/MagicMissile.tres" id="2_ien1g"]
+[ext_resource type="Resource" uid="uid://cnlqawhis2ydc" path="res://spells/Firebolt.tres" id="2_qnm8h"]
+[ext_resource type="Resource" uid="uid://d1sxe20dhnuyh" path="res://spells/FreezingRay.tres" id="3_mwgyb"]
+[ext_resource type="Resource" uid="uid://8ex2b4r0qyij" path="res://spells/Fireball.tres" id="4_j32n3"]
+[ext_resource type="Resource" uid="uid://dvv51ikotywqm" path="res://spells/LightningBolt.tres" id="5_hegj0"]
+
+[resource]
+script = ExtResource("1_eqlvj")
+slotDatas = Array[Resource("res://resources/spells.gd")]([ExtResource("2_qnm8h"), ExtResource("2_ien1g"), ExtResource("3_mwgyb"), ExtResource("4_j32n3"), ExtResource("5_hegj0")])

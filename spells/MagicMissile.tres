@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Spells" load_steps=2 format=3 uid="uid://bgdpwtj1mibrx"]
+
+[ext_resource type="Script" path="res://resources/spells.gd" id="1_rdni1"]
+
+[resource]
+script = ExtResource("1_rdni1")
+Name = "Mísseis Mágicos"
+Description = "Três mísseis mágicos são conjurados para perseguir o inimigo.
+Dano: 3d4 + Int. Mod
+Elemento: Nenhum
+Cast time: Instantâneo
+Inteligência requerida: 3
+Custo de aprendizado: 50 G"
+MP_Cost = 8
+Level = 1
+Damage = 3
+Multiplier = 4
+Modifier = 1
+Element = 0
+CastTime = 1
+IntRequirement = 3
+LearnCost = 50

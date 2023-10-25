@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Spells" load_steps=2 format=3 uid="uid://8ex2b4r0qyij"]
+
+[ext_resource type="Script" path="res://resources/spells.gd" id="1_eucds"]
+
+[resource]
+script = ExtResource("1_eucds")
+Name = "Bola de Fogo"
+Description = "Uma bola de fogo que ao entrar em contato com o alvo explode.
+Dano: 7d6 + 4*Int. Mod
+Elemento: Fogo
+Cast time: 4
+Inteligência requerida: 7
+Custo de aprendizado: 150 G"
+MP_Cost = 25
+Level = 3
+Damage = 6
+Multiplier = 7
+Modifier = 4
+Element = 1
+CastTime = 4
+IntRequirement = 7
+LearnCost = 150

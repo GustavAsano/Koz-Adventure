@@ -1,0 +1,162 @@
+[gd_scene load_steps=13 format=3 uid="uid://b7ivx7nud3xs2"]
+
+[ext_resource type="Script" path="res://scripts/inventory_tab.gd" id="1_hhu5t"]
+[ext_resource type="PackedScene" uid="uid://41h2u5coc70y" path="res://inventory_list.tscn" id="2_cvsq7"]
+[ext_resource type="PackedScene" uid="uid://dy0h15530yhc1" path="res://equips.tscn" id="3_tha7i"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1fjco"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4jfrv"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jh42p"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bj1kl"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_sels5"]
+bg_color = Color(0.0901961, 0.0901961, 0.0901961, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_exnaa"]
+bg_color = Color(0.0509804, 0.0509804, 0.0509804, 1)
+
+[sub_resource type="InputEventKey" id="InputEventKey_3wlpx"]
+device = -1
+keycode = 73
+unicode = 105
+
+[sub_resource type="InputEventKey" id="InputEventKey_vn68y"]
+device = -1
+keycode = 4194305
+
+[sub_resource type="Shortcut" id="Shortcut_gpgw6"]
+events = [SubResource("InputEventKey_3wlpx"), SubResource("InputEventKey_vn68y")]
+
+[node name="InventoryTab" type="PanelContainer"]
+offset_right = 1918.0
+offset_bottom = 1079.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_1fjco")
+script = ExtResource("1_hhu5t")
+
+[node name="Margin" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Columns" type="HBoxContainer" parent="Margin"]
+layout_mode = 2
+
+[node name="InventoryList" parent="Margin/Columns" instance=ExtResource("2_cvsq7")]
+layout_mode = 2
+
+[node name="Other" type="PanelContainer" parent="Margin/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_4jfrv")
+
+[node name="Right" type="VBoxContainer" parent="Margin/Columns/Other"]
+layout_mode = 2
+
+[node name="Item" type="PanelContainer" parent="Margin/Columns/Other/Right"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_jh42p")
+
+[node name="MarginContainer" type="MarginContainer" parent="Margin/Columns/Other/Right/Item"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 55
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Margin/Columns/Other/Right/Item/MarginContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="Margin/Columns/Other/Right/Item/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bj1kl")
+
+[node name="MarginContainer" type="MarginContainer" parent="Margin/Columns/Other/Right/Item/MarginContainer/VBoxContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Item" type="Label" parent="Margin/Columns/Other/Right/Item/MarginContainer/VBoxContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "Item"
+
+[node name="PanelContainer3" type="PanelContainer" parent="Margin/Columns/Other/Right/Item/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_bj1kl")
+
+[node name="MarginContainer" type="MarginContainer" parent="Margin/Columns/Other/Right/Item/MarginContainer/VBoxContainer/PanelContainer3"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Type" type="Label" parent="Margin/Columns/Other/Right/Item/MarginContainer/VBoxContainer/PanelContainer3/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 30
+text = "Type"
+
+[node name="PanelContainer2" type="PanelContainer" parent="Margin/Columns/Other/Right/Item/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_bj1kl")
+
+[node name="MarginContainer" type="MarginContainer" parent="Margin/Columns/Other/Right/Item/MarginContainer/VBoxContainer/PanelContainer2"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="Description" type="RichTextLabel" parent="Margin/Columns/Other/Right/Item/MarginContainer/VBoxContainer/PanelContainer2/MarginContainer"]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 30
+text = "This is the description of the item!"
+
+[node name="Equips" parent="Margin/Columns/Other/Right" instance=ExtResource("3_tha7i")]
+visible = false
+layout_mode = 2
+
+[node name="ExitButton" type="Button" parent="Margin"]
+custom_minimum_size = Vector2(50, 50)
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 0
+focus_mode = 0
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_sels5")
+theme_override_styles/hover = SubResource("StyleBoxFlat_exnaa")
+shortcut = SubResource("Shortcut_gpgw6")
+text = "X"
+
+[connection signal="pressed" from="Margin/ExitButton" to="." method="_on_exit_button_pressed"]

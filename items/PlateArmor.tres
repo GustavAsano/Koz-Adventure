@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="Armors" load_steps=2 format=3 uid="uid://df4m8mfk54rww"]
+
+[ext_resource type="Script" path="res://resources/armors.gd" id="1_honwr"]
+
+[resource]
+script = ExtResource("1_honwr")
+Defense = 30
+HPExtra = 30
+MPExtra = 0
+Modifier = 0
+ModType = 0
+Weight = 1
+Armor_Type = 1
+Evasion = -20
+Resistance = Array[Resource("res://resources/resistance.gd")]([])
+Name = "Armadura de Placa"
+Description = "Uma armadura pesada que protege o usuário, mas deixando o mais lento
+Defesa: +30
+HP: +30
+Compra: 100 G
+Venda: 75 G"
+BuyPrice = 100
+SellPrice = 75
+Stackable = true
+ItemType = 1

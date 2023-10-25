@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Boss1" load_steps=5 format=3 uid="uid://dhwkli81a68jk"]
+
+[ext_resource type="Script" path="res://resources/Boss1.gd" id="1_wfq7y"]
+[ext_resource type="Script" path="res://resources/SpellList.gd" id="2_wgunn"]
+[ext_resource type="Resource" uid="uid://8ex2b4r0qyij" path="res://spells/Fireball.tres" id="3_a8w0f"]
+
+[sub_resource type="Resource" id="Resource_tqe26"]
+script = ExtResource("2_wgunn")
+slotDatas = Array[Resource("res://resources/spells.gd")]([ExtResource("3_a8w0f")])
+
+[resource]
+script = ExtResource("1_wfq7y")
+current_hp = 500
+spells = SubResource("Resource_tqe26")
+Name = ""
+Level = ""
+HP = 500
+MP = 250
+EXPDrop = 1000
+DropQnt = 1
+Damage = 2
+Modifier = 6
+Multiplier = 5
+Defense = 60
+Boss_enemy = true
+Resistance = Array[Resource("res://resources/resistance.gd")]([])

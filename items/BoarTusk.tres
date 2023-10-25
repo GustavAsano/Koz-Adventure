@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3 uid="uid://byu8l3rnhq8mk"]
+
+[ext_resource type="Script" path="res://resources/base_item.gd" id="1_2kpjn"]
+
+[resource]
+script = ExtResource("1_2kpjn")
+Name = "Chifre de Javali"
+Description = "Um chifre de javali.
+Venda: 30 G"
+BuyPrice = 30
+SellPrice = 30
+Stackable = true
+ItemType = 3

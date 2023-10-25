@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Weapons" load_steps=2 format=3 uid="uid://bik14d6pnb67f"]
+
+[ext_resource type="Script" path="res://resources/weapons.gd" id="1_l5vdc"]
+
+[resource]
+script = ExtResource("1_l5vdc")
+Damage = 12
+Multiplier = 1
+Modifier = 2
+Weapon_Type = 0
+Evasion = -20
+Name = "Espadão"
+Description = "Uma espada gigante
+Dano: 1d12 + Str. Mod + 2
+Compra: 150G
+Venda: 100G"
+BuyPrice = 150
+SellPrice = 100
+Stackable = true
+ItemType = 0

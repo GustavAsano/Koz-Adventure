@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Spells" load_steps=2 format=3 uid="uid://dvv51ikotywqm"]
+
+[ext_resource type="Script" path="res://resources/spells.gd" id="1_vdv15"]
+
+[resource]
+script = ExtResource("1_vdv15")
+Name = "Relâmpago"
+Description = "Conjure um relâmpago que atinge alvos em uma linha reta.
+Dano: 7d6 + 4*Int. Mod
+Elemento: Trovão
+Cast time: 4
+Inteligência requerida: 7
+Custo de aprendizado: 150 G"
+MP_Cost = 25
+Level = 3
+Damage = 8
+Multiplier = 7
+Modifier = 4
+Element = 3
+CastTime = 4
+IntRequirement = 7
+LearnCost = 150

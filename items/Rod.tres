@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Weapons" load_steps=2 format=3 uid="uid://bok3cmk7dbrvg"]
+
+[ext_resource type="Script" path="res://resources/weapons.gd" id="1_a5fux"]
+
+[resource]
+script = ExtResource("1_a5fux")
+Damage = 6
+Multiplier = 1
+Modifier = 2
+Weapon_Type = 1
+Evasion = 0
+Name = "Cajado"
+Description = "Um cajado que fortelace os ataques mágicos
+Dano: 1d6
+Modificador (Mágico): +2
+Compra: 50 G
+Venda: 37 G
+"
+BuyPrice = 50
+SellPrice = 37
+Stackable = true
+ItemType = 0

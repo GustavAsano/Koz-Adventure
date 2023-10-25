@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Spells" load_steps=2 format=3 uid="uid://cnlqawhis2ydc"]
+
+[ext_resource type="Script" path="res://resources/spells.gd" id="1_wytxk"]
+
+[resource]
+script = ExtResource("1_wytxk")
+Name = "Raio de Fogo"
+Description = "Uma magia que lança um projétil pequeno de fogo no inimigo.
+Dano: 1d4 + Int. Mod.
+Elemento: Fogo
+Cast time: Instantâneo
+Inteligência requerida: 1
+Custo de aprendizado: 25 G"
+MP_Cost = 5
+Level = 0
+Damage = 4
+Multiplier = 1
+Modifier = 1
+Element = 1
+CastTime = 0
+IntRequirement = 1
+LearnCost = 25

@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Quests" load_steps=4 format=3 uid="uid://bluytf871kkdd"]
+
+[ext_resource type="Resource" uid="uid://piseg2kcd54x" path="res://items/FireResPot.tres" id="1_2mnh0"]
+[ext_resource type="Resource" uid="uid://b6schu0iueegi" path="res://items/FireHerb.tres" id="1_uqdto"]
+[ext_resource type="Script" path="res://resources/Quests.gd" id="3_635f4"]
+
+[resource]
+script = ExtResource("3_635f4")
+Character = "Marta"
+Objective = 0
+RequiredItem = ExtResource("1_uqdto")
+Number = 1
+Progress = 0
+Flag = -1
+GoldReward = 100
+ItemQnt = 5
+ItemReward = ExtResource("1_2mnh0")

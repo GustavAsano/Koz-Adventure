@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=5 format=3 uid="uid://b4d7yiv0boih5"]
+
+[ext_resource type="Script" path="res://resources/base_enemy.gd" id="1_66otu"]
+[ext_resource type="Resource" uid="uid://c0hjq8fm50nk5" path="res://items/VenomIvy.tres" id="1_n0bby"]
+[ext_resource type="Script" path="res://resources/resistance.gd" id="2_t1d0e"]
+
+[sub_resource type="Resource" id="Resource_vscqp"]
+script = ExtResource("2_t1d0e")
+element = 0
+percentage = -100
+
+[resource]
+script = ExtResource("1_66otu")
+Name = "Planta Carnivora"
+Level = "5"
+HP = 75
+MP = 20
+EXPDrop = 50
+ItemDrop = ExtResource("1_n0bby")
+DropQnt = 1
+Damage = 8
+Modifier = 3
+Multiplier = 1
+Defense = 20
+Boss_enemy = false
+Resistance = Array[ExtResource("2_t1d0e")]([SubResource("Resource_vscqp")])

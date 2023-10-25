@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3 uid="uid://cjakt6lgaait4"]
+
+[ext_resource type="Script" path="res://resources/base_item.gd" id="1_8hxcb"]
+
+[resource]
+script = ExtResource("1_8hxcb")
+Name = "Ferramentas de bandido"
+Description = "Uma bolsa cheia de ferramentas utilizadas por bandidos, além de alguns itens valiosos. 
+Venda: 75 G"
+BuyPrice = 75
+SellPrice = 75
+Stackable = true
+ItemType = 0

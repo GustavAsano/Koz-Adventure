@@ -1,0 +1,11 @@
+[
+	{"encounterID":0,"promptID": 0 ,"dialogID":0},
+	{"encounterID":1,"Enemy":"Slime","Difficulty":1,"promptID": 0 ,"dialogID":16,"Story": true},
+	{"encounterID":2,"Enemy":"Slime","Difficulty":1,"promptID": 0 ,"dialogID":18,"Story": true},
+	{"encounterID":3,"Enemy":"Slime","Difficulty":1,"promptID": 17 ,"dialogID":0,"Story": false},
+	{"encounterID":4,"Enemy":"WildBoar","Difficulty":1,"promptID": 24 ,"dialogID":0,"Story": false},
+	{"encounterID":5,"Enemy":"CPlant","Difficulty":1,"promptID": 0 ,"dialogID":69,"Story": true},
+	{"encounterID":6,"Enemy":"CPlant","Difficulty":1,"promptID": 25 ,"dialogID":0,"Story": false},
+	{"encounterID":7,"Enemy":"Bandit","Difficulty":1,"promptID": 26 ,"dialogID":0,"Story": false},
+	{"encounterID":8,"Enemy":"CrystalGolem","Difficulty":1,"promptID": 28 ,"dialogID":0,"Story": false},
+]

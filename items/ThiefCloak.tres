@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Armors" load_steps=2 format=3 uid="uid://bqwgk4cn1snle"]
+
+[ext_resource type="Script" path="res://resources/armors.gd" id="1_xvttx"]
+
+[resource]
+script = ExtResource("1_xvttx")
+Defense = 10
+HPExtra = 10
+MPExtra = 10
+Modifier = 0
+ModType = 0
+Weight = 0
+Armor_Type = 0
+Evasion = 20
+Resistance = Array[Resource("res://resources/resistance.gd")]([])
+Name = "Gorro do Ladrão"
+Description = "Este gorro e capa é encantado para ajudar o usuário ficar despercebido por seres a sua volta além de ajudar na evasão.
+Defesa: +10
+HP: +10
+MP: +10
+Compra: 500 G
+Venda: 375 G"
+BuyPrice = 500
+SellPrice = 375
+Stackable = true
+ItemType = 1

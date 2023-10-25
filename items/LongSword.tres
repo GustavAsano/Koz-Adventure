@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Weapons" load_steps=2 format=3 uid="uid://0ytgieb06axp"]
+
+[ext_resource type="Script" path="res://resources/weapons.gd" id="1_r4usp"]
+
+[resource]
+script = ExtResource("1_r4usp")
+Damage = 10
+Multiplier = 1
+Modifier = 0
+Weapon_Type = 0
+Evasion = 0
+Name = "Espada Longa"
+Description = "Uma espada longa regular
+dano: 1d10 + Str.Mod
+Compra: 100G
+Venda:75G"
+BuyPrice = 100
+SellPrice = 75
+Stackable = true
+ItemType = 0

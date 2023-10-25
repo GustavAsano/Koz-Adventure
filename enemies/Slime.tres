@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=5 format=3 uid="uid://csomodynvh4b5"]
+
+[ext_resource type="Resource" uid="uid://dj2eky18g028x" path="res://items/GreenMucus.tres" id="1_0x712"]
+[ext_resource type="Script" path="res://resources/base_enemy.gd" id="1_80ybk"]
+[ext_resource type="Script" path="res://resources/resistance.gd" id="1_c65br"]
+
+[sub_resource type="Resource" id="Resource_3o50y"]
+script = ExtResource("1_c65br")
+element = 0
+percentage = -50
+
+[resource]
+script = ExtResource("1_80ybk")
+Name = "Slime"
+Level = "1"
+HP = 20
+MP = 10
+EXPDrop = 10
+ItemDrop = ExtResource("1_0x712")
+DropQnt = 1
+Damage = 4
+Modifier = 0
+Multiplier = 1
+Defense = 5
+Boss_enemy = false
+Resistance = Array[ExtResource("1_c65br")]([SubResource("Resource_3o50y")])

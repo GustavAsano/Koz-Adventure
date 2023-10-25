@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Consumables" load_steps=2 format=3 uid="uid://cpurifpmlwemc"]
+
+[ext_resource type="Script" path="res://resources/consumable.gd" id="1_v7y6x"]
+
+[resource]
+script = ExtResource("1_v7y6x")
+HP_Restored = 60
+MP_Restored = 0
+TypeReduction = 0
+DamageReduction = 0
+Damage = 0
+Defense = 0
+EffectTurns = 0
+BattleRequired = false
+Name = "Poção de Cura (M)"
+Description = "Poção de tamanho média que recupera vida.
+Compra: 40G
+Venda: 30G"
+BuyPrice = 40
+SellPrice = 30
+Stackable = true
+ItemType = 2

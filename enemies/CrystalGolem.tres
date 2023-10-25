@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=3 format=3 uid="uid://c8ddksgfrsf2g"]
+
+[ext_resource type="Resource" uid="uid://b7jnlltrrsjcn" path="res://items/Crystal.tres" id="1_atjt6"]
+[ext_resource type="Script" path="res://resources/base_enemy.gd" id="1_pkqei"]
+
+[resource]
+script = ExtResource("1_pkqei")
+Name = "Golem de Cristal"
+Level = "9"
+HP = 150
+MP = 30
+EXPDrop = 150
+ItemDrop = ExtResource("1_atjt6")
+DropQnt = 1
+Damage = 10
+Modifier = 5
+Multiplier = 1
+Defense = 40
+Boss_enemy = false
+Resistance = Array[Resource("res://resources/resistance.gd")]([])

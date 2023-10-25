@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="EnemyData" load_steps=3 format=3 uid="uid://rv14b7osjgu"]
+
+[ext_resource type="Resource" uid="uid://cjakt6lgaait4" path="res://items/BanditTools.tres" id="1_emy5q"]
+[ext_resource type="Script" path="res://resources/base_enemy.gd" id="1_rlahq"]
+
+[resource]
+script = ExtResource("1_rlahq")
+Name = "Bandido"
+Level = "7"
+HP = 80
+MP = 50
+EXPDrop = 75
+ItemDrop = ExtResource("1_emy5q")
+DropQnt = 1
+Damage = 10
+Modifier = 3
+Multiplier = 1
+Defense = 30
+Boss_enemy = false
+Resistance = Array[Resource("res://resources/resistance.gd")]([])

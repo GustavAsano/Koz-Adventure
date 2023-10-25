@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Armors" load_steps=2 format=3 uid="uid://gmrnjl4xds1g"]
+
+[ext_resource type="Script" path="res://resources/armors.gd" id="1_7u3fr"]
+
+[resource]
+script = ExtResource("1_7u3fr")
+Defense = 20
+HPExtra = 20
+MPExtra = 5
+Modifier = 2
+ModType = 0
+Weight = 1
+Armor_Type = 0
+Evasion = -15
+Resistance = Array[Resource("res://resources/resistance.gd")]([])
+Name = "Elmo de Guerreiro"
+Description = "Um elmo específico para combate.
+Defesa: +20
+HP: +20
+Modificador (Físico): +2
+Compra: 500 G
+Venda: 375 G"
+BuyPrice = 500
+SellPrice = 375
+Stackable = true
+ItemType = 1
